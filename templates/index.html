@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Diabetics Prediction System</title>
+
+</head>
+<body style="padding: 150pt;
+            padding-left: 400pt;
+            padding-top: 90pt;
+            background-color: rgb(255, 255, 255);
+            /* background-image: url('/templates/medical-insurance-img.jpg') */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;">
+
+    <h1>Welcome to Diabetics Prediction System</h1>
+
+    <form method="GET" action="/predict_charges">
+
+        <label style="font-size: 20pt;font: bolder;">Glucose:</label>
+            <input Style="margin-left: 71pt;" type = "text" name = "Glucose">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;">BloodPressure:</label>
+            <input Style="margin-left: 20pt;" type = "text" name = "BloodPressure">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;"> SkinThickness:</label>
+            <input Style="margin-left: 20pt;" Style="margin-left: 30pt;" type = "text" name = "SkinThickness">
+        </select>
+
+        <br>
+        <br>
+        <label style="font-size: 20pt;font: bolder;">Insulin:</label>
+            <input Style="margin-left: 80pt;" type = "text" name = "Insulin">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;">BMI:</label>
+            <input Style="margin-left: 100pt;" type = "text" name = "BMI">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder;">DiabetesPedigreeFunction:</label>
+            <input Style="margin-left: 20pt;" type = "text" name = "DiabetesPedigreeFunction">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="font-size: 20pt;font: bolder; margin-left: 20pt;">Age:</label>
+            <input Style="margin-left: 80pt;" type = "text" name = "Age">
+        </select>
+
+
+        <input style="width:500pt;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      " type = "submit" value = "SUBMIT">
+        <br>
+        <p style="font-size: 23pt; font: bolder;"><b>{{ prediction }}</b></p>
+
+        <!-- <p>This System is Not 100% accurate before taking any medication please take Doctor consultation</p> -->
+    </form>
+</body>
+</html>
